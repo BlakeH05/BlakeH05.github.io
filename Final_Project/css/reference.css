@@ -1,0 +1,16 @@
+div.grid {
+    display:grid; 
+    grid-template-columns: 30% 70%;
+    grid-gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 5%;
+
+}
+
+.grid ul li {
+    font-size: 2em;
+}
+
+img {
+    width: 100%;
+}
