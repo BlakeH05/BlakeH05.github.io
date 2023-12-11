@@ -1,0 +1,106 @@
+nav{
+    display: table;
+
+}
+
+nav ul{
+    display: table-row;
+
+}
+
+nav ul li {
+	display: table-cell;
+	width: 15%;
+	text-align: center;
+	margin-right: 2%;
+	border: thin solid white;
+	border-collapse: collapse;
+}
+nav ul li:hover {
+background-color: green;
+}
+nav ul li a {
+	margin-bottom: 0;
+    color: tan;
+    text-decoration: none;
+    display: block;
+}
+nav {
+	display: table;
+	width: 96%;
+	margin: 0 auto;
+	float: none;
+}
+nav ul {
+	display: table-row;
+	margin: 0;
+}
+
+body {
+    background-color: darkgreen;
+    color: white;
+}
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+@media only screen and (max-width: 640px) {
+
+    section#main {
+       width: 100%;
+    }
+    
+    section#right {
+       width: 100%;
+    }
+    
+    a#navicon {
+       display: block;
+    }
+    
+    header nav ul {
+       display: none;
+    }
+    
+    header nav ul li {
+       font-size: 1em;
+       line-height: 1.3em;
+       height: 1.3em;
+    }
+    
+    a#navicon:hover+ul, header nav ul:hover {
+       display: block;
+    }
+ }
+ 
+ /* =============================================
+    Tablet and Desktop Styles: greater than 640px
+    =============================================
+ */
+ @media only screen and (min-width: 641px) {
+ 
+    section#main {
+       float: left;
+       width: 70%;
+    }
+    
+    section#right {
+       float: left;
+       width: 30%;
+    }
+    
+    header nav ul {
+       display: -webkit-flex;
+       display: flex;
+       -webkit-flex-flow: row nowrap;
+       flex-flow: row nowrap;
+       -webkit-justify-content: center;
+       justify-content: center;
+    }
+    
+    header nav ul li {
+       -webkit-flex: 0 1 auto;
+       flex: 0 1 auto;
+    }
+ }
